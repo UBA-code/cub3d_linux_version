@@ -96,7 +96,7 @@ void	draw_2dmap(t_cub3d *cub)
 		cub->window_height);
 	new_main_img(cub, &cub->map_img, WINDOW_WIDTH, WINDOW_HEIGTH);
 	mlx_hook(cub->mlx.win, 2, 1L<<0, key_pressed, cub);
-	mlx_hook(cub->mlx.win, 3, 1L<, key_released, cub);
+	mlx_hook(cub->mlx.win, 3, 1L<<1, key_released, cub);
 	mlx_hook(cub->mlx.win, 17, 0, exit_btn, cub);
 	mlx_loop_hook(cub->mlx.mlx_ptr, render_2dmap, cub);
 	mlx_loop(cub->mlx.mlx_ptr);

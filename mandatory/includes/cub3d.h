@@ -20,7 +20,7 @@
 # include "fcntl.h"
 # include "unistd.h"
 # include "../src/libft/libft.h"
-# include "mlx.h"
+# include "../../mlx_linux/mlx.h"
 
 # define NO 				0
 # define EA 				1
